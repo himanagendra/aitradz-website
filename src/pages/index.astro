@@ -1,0 +1,192 @@
+---
+import '../styles/global.css';
+import CandlestickChart from '../components/CandlestickChart.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AiTradz - Elliott Wave Directional Tool for Nifty Options</title>
+    <meta name="description" content="An Elliott Wave–driven directional tool for Nifty options." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-ambient-grid"></div>
+
+    <!-- 1. HERO SECTION -->
+    <header>
+      <div class="container nav-bar">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+              <polyline points="16 7 22 7 22 13"></polyline>
+            </svg>
+          </div>
+          <span>AiTradz</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Nifty Options Tool
+            </div>
+            <h1 class="hero-title text-gradient">AiTradz</h1>
+            <p class="hero-subtitle">
+              An Elliott Wave–driven directional tool for Nifty options
+            </p>
+          </div>
+
+          <!-- Candlestick Chart Component -->
+          <CandlestickChart />
+        </div>
+      </section>
+
+      <!-- 2. CORE PRINCIPLE SECTION -->
+      <section class="principle-section">
+        <div class="container">
+          <blockquote class="principle-statement">
+            "Elliott Wave tells you <span class="where">where</span>. Independent indicators tell you <span class="whether">whether</span>. You <span class="decide">decide</span>."
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- 3. HOW IT THINKS SECTION -->
+      <section class="flow-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">How it thinks</h2>
+            <p class="section-subtitle">Systematic decision flow</p>
+          </div>
+
+          <div class="flow-container">
+            <!-- Layer 1: Data -->
+            <div class="flow-card">
+              <span class="flow-step-num">01</span>
+              <div class="flow-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <span class="flow-label">Data</span>
+            </div>
+
+            <!-- Layer 2: Indicators -->
+            <div class="flow-card">
+              <span class="flow-step-num">02</span>
+              <div class="flow-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="21" x2="4" y2="14"></line>
+                  <line x1="4" y1="10" x2="4" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="3"></line>
+                  <line x1="20" y1="21" x2="20" y2="16"></line>
+                  <line x1="20" y1="12" x2="20" y2="3"></line>
+                  <line x1="1" y1="14" x2="7" y2="14"></line>
+                  <line x1="9" y1="8" x2="15" y2="8"></line>
+                  <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+              </div>
+              <span class="flow-label">Indicators</span>
+            </div>
+
+            <!-- Layer 3: EW Direction -->
+            <div class="flow-card">
+              <span class="flow-step-num">03</span>
+              <div class="flow-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <span class="flow-label">EW Direction</span>
+            </div>
+
+            <!-- Layer 4: Confirmation -->
+            <div class="flow-card">
+              <span class="flow-step-num">04</span>
+              <div class="flow-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <span class="flow-label">Confirmation</span>
+            </div>
+
+            <!-- Layer 5: Strike Picker -->
+            <div class="flow-card">
+              <span class="flow-step-num">05</span>
+              <div class="flow-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <span class="flow-label">Strike Picker</span>
+            </div>
+
+            <!-- Layer 6: Position Monitor -->
+            <div class="flow-card">
+              <span class="flow-step-num">06</span>
+              <div class="flow-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <span class="flow-label">Position Monitor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. STATUS SECTION -->
+      <section class="status-section">
+        <div class="container">
+          <div class="status-card">
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              Current Status
+            </div>
+            
+            <h2 class="status-heading">Actively in development</h2>
+
+            <div class="stage-tracker">
+              <div class="stage-labels">
+                <span>Architecture</span>
+                <span class="text-accent">Model Integration</span>
+                <span>Testing</span>
+              </div>
+              <div class="stage-bar-bg">
+                <div class="stage-bar-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 5. FOOTER -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">AiTradz</div>
+        <p>Personal Project</p>
+        <p class="footer-note">Contact: dev@aitradz.local</p>
+      </div>
+    </footer>
+  </body>
+</html>
